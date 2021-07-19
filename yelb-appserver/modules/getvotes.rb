@@ -2,10 +2,10 @@ require_relative 'restaurantsdbread'
 require_relative 'restaurantsdbupdate'
 
 def getvotes()
-        outback = restaurantsdbread("outback")
-        ihop = restaurantsdbread("ihop")
-        bucadibeppo = restaurantsdbread("bucadibeppo")
-        chipotle = restaurantsdbread("chipotle")
-        votes = '[{"name": "outback", "value": ' + outback + '},' + '{"name": "bucadibeppo", "value": ' + bucadibeppo + '},' + '{"name": "ihop", "value": '  + ihop + '}, ' + '{"name": "chipotle", "value": '  + chipotle + '}]'
+        pfizer = restaurantsdbread("pfizer")
+        covaxin = restaurantsdbread("covaxin")
+        sputnik = restaurantsdbread("sputnik")
+        covishield = restaurantsdbread("covishield")
+        votes = '[{"name": "pfizer", "value": ' + pfizer + '},' + '{"name": "sputnik", "value": ' + sputnik + '},' + '{"name": "covaxin", "value": '  + covaxin + '}, ' + '{"name": "covishield", "value": '  + covishield + '}]'
         return votes
 end

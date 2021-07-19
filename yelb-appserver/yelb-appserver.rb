@@ -114,30 +114,30 @@ get '/api/getvotes' do
     @votes = getvotes()
 end #get /api/getvotes 
 
-get '/api/ihop' do
+get '/api/covaxin' do
     headers 'Access-Control-Allow-Origin' => '*'
     headers 'Access-Control-Allow-Headers' => 'Authorization,Accepts,Content-Type,X-CSRF-Token,X-Requested-With'
     headers 'Access-Control-Allow-Methods' => 'GET,POST,PUT,DELETE,OPTIONS'
-    @ihop = restaurantsupdate("ihop")
-end #get /api/ihop 
+    @covaxin = restaurantsupdate("covaxin")
+end #get /api/covaxin 
 
-get '/api/chipotle' do
+get '/api/covishield' do
     headers 'Access-Control-Allow-Origin' => '*'
     headers 'Access-Control-Allow-Headers' => 'Authorization,Accepts,Content-Type,X-CSRF-Token,X-Requested-With'
     headers 'Access-Control-Allow-Methods' => 'GET,POST,PUT,DELETE,OPTIONS' 
-    @chipotle = restaurantsupdate("chipotle")
-end #get /api/chipotle 
+    @covishield = restaurantsupdate("covishield")
+end #get /api/covishield 
 
-get '/api/outback' do
+get '/api/pfizer' do
     headers 'Access-Control-Allow-Origin' => '*'
     headers 'Access-Control-Allow-Headers' => 'Authorization,Accepts,Content-Type,X-CSRF-Token,X-Requested-With'
     headers 'Access-Control-Allow-Methods' => 'GET,POST,PUT,DELETE,OPTIONS'
-    @outback = restaurantsupdate("outback")
-end #get /api/outback 
+    @pfizer = restaurantsupdate("pfizer")
+end #get /api/pfizer 
 
-get '/api/bucadibeppo' do
+get '/api/sputnik' do
     headers 'Access-Control-Allow-Origin' => '*'
     headers 'Access-Control-Allow-Headers' => 'Authorization,Accepts,Content-Type,X-CSRF-Token,X-Requested-With'
     headers 'Access-Control-Allow-Methods' => 'GET,POST,PUT,DELETE,OPTIONS' 
-    @bucadibeppo = restaurantsupdate("bucadibeppo")
-end #get /api/bucadibeppo 
+    @sputnik = restaurantsupdate("sputnik")
+end #get /api/sputnik 
