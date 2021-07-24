@@ -9,7 +9,6 @@ WORKDIR /app
 COPY yelb-appserver.rb yelb-appserver.rb 
 COPY Gemfile Gemfile
 COPY modules modules
-RUN chmod +x startup.sh
 ENV LANG=en_us.UTF-8
 ENV LC_ALL=C.UTF-8
 ENV RACK_ENV=production
