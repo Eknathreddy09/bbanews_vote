@@ -23,7 +23,7 @@ RUN cp /clarity-seed-newfiles/package.json /clarity-seed/package.json
 RUN cp /clarity-seed-newfiles/angular-cli.json /clarity-seed/.angular-cli.json
 RUN rm -r /clarity-seed/src/app/home
 RUN rm -r /clarity-seed/src/app/about
-
+RUN chmod +x startup.sh
 WORKDIR /clarity-seed/src
 
 RUN npm install  
